@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Owlsense",
+    "ip": "10.100.105.112",
+    "port": "3001",
+    "status": "UP",
+    "last_online_at": "2024-11-19T12:44:54.871Z"
+  },
+  {
+    "name": "JADOPS",
+    "ip": "10.20.20.114",
+    "port": "3000",
+    "status": "DOWN",
+    "last_online_at": "2024-11-19T09:55:49.922Z"
+  },
+  {
+    "name": "Link Analysis v2",
+    "ip": "10.100.102.112",
+    "port": "3002",
+    "status": "DOWN",
+    "last_online_at": "2024-11-19T09:55:49.923Z"
+  }
+]
