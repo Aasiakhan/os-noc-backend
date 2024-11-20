@@ -1,4 +1,4 @@
-import {isServiceOnline, readServicesFile} from "../utils";
+import {isServiceOnline, readServicesFile, writeServicesFile} from "../utils";
 
 export const ServiceStatusController = async () => {
     const services = await readServicesFile()
@@ -11,8 +11,7 @@ export const ServiceStatusController = async () => {
     }))
 
     // Write to services.json
-    try { await Bun.write("services.json", JSON.stringify(data, null, 2)) }
-    catch (err) { console.error("Error writing file:", err) }
+    await writeServicesFile(data)
 
     return new Response(
         JSON.stringify({ updated_at: new Date().toISOString(), data }),
